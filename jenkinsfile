@@ -1,0 +1,19 @@
+pipeline {
+  agent any
+
+  tools {
+      maven 'Maven3'
+}
+environment {
+    SONARQUBE = 'SonarQube'
+}
+stages {
+  stage ('Checkout') {
+    steps{
+      git 'https://github.com/deepasreetk/2024'
+        }
+  }
+  
+  }
+}
+  }
